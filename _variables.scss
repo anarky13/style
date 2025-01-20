@@ -1,0 +1,18 @@
+@use 'helpers' as *;
+
+:root {
+
+  --font-family-base: ;
+  --font-family-accent: ;
+
+  --container-width: #{rem(1600)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  --100vw: calc(100vw - var(--scrollbar-width));
+
+  @include laptop {
+    --container-width: #{rem(1280)};
+  }
+}
